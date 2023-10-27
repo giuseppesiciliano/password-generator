@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="display">
+        
+        <div class="content">
+            <!-- SCREEN -->
+            <div class="screen">
+                <span id="password"></span>
+            </div>
+
+            <!-- LENGTH -->
+            <div class="length">
+                <h5>LUNGHEZZA: <span id="value-show"></span></h5>
+                <div class="input">
+                    <span id="min-value"></span>
+                    <input type="range" min="" max="" value="" id="myRange">
+                    <span id="max-value"></span>
+                </div>                
+            </div>
+
+            <!-- SETTINGS -->
+            <div class="settings">
+                <h5>IMPOSTAZIONI</h5>
+                <div class="grid">
+
+                    <div class="box">
+                        <span>A-Z</span>
+                        <input type="checkbox" id="switch-1" /><label for="switch-1">Toggle</label>
+                    </div>
+
+                    <div class="box">
+                        <span>a-z</span>
+                        <input type="checkbox" id="switch-2" /><label for="switch-2">Toggle</label>
+                    </div>
+
+                    <div class="box">
+                        <span>0-9</span>
+                        <input type="checkbox" id="switch-3" /><label for="switch-3">Toggle</label>
+                    </div>
+
+                    <div class="box">
+                        <span>!@#</span>
+                        <input type="checkbox" id="switch-4" /><label for="switch-4">Toggle</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- BUTTON -->
+            <div class="button">
+                <button onclick="generatePassword()">GENERA PASSWORD</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
